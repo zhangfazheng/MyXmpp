@@ -1,0 +1,28 @@
+# Uncomment the next line to define a global platform for your project
+ platform :ios, '9.0'
+
+target 'MyMVVMFramework' do
+pod 'AFNetworking'
+pod 'SDWebImage'
+pod 'MBProgressHUD'
+pod 'Masonry'
+pod 'MJRefresh'
+pod 'FMDB'
+pod 'YYKit'
+#pod 'YYModel’
+pod 'IQKeyboardManager'
+pod 'ChameleonFramework'
+pod 'RealReachability'
+pod 'WebViewJavascriptBridge'
+pod 'ReactiveObjC'
+pod 'JDStatusBarNotification'
+  # Uncomment the next line if you're using Swift or would like to use dynamic frameworks
+use_frameworks!
+pod 'XMPPFramework'
+
+  target 'MyMVVMFrameworkTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+end

@@ -1,0 +1,122 @@
+//
+//  PrefixHeader.pch
+//  FamilyEducation
+//
+//  Created by 张发政 on 2017/5/5.
+//  Copyright © 2017年 zhangfazheng. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+// 自定义Log
+//#ifdef DEBUG
+//#define DLog(...) NSLog(__VA_ARGS__)
+//#else
+//#define DLog(...)
+//#endif
+#ifdef __OBJC__
+//#import <Foundation/Foundation.h>
+//#import <UIKit/UIKit.h>
+#import "ReactiveObjC.h"
+#endif
+
+#if (defined(DEBUG))
+#define NSLog(fmt, ...) NSLog((@"%s [Line %d] " fmt), __PRETTY_FUNCTION__, __LINE__, ##__VA_ARGS__)
+#else
+#define NSLog(fmt, ...) 
+#endif
+
+#define LogError(error) NSLog(@"Error: %@", error)
+
+// 版本信息
+#define IOS_7  ([[[UIDevice currentDevice] systemVersion] floatValue] > 7.1)
+#define IOS_9  ([[[UIDevice currentDevice] systemVersion] floatValue] > 9.0)
+#define IOS_10  ([[[UIDevice currentDevice] systemVersion] floatValue] > 10.0)
+
+#define SCREEN_SIZE [[UIScreen mainScreen] bounds].size
+
+#define NAVIGATION_BAR_HEIGHT 64          // NavigationBar高度
+#define TABBAR_HEIGHT     49              // tabBar高度
+#define NAV_BAR_HEIGHT 44
+#define STATUS_HEIGHT 20
+
+/**
+ *  间隔
+ */
+#define TabNavBarBottom 64
+#define TabTitlesViewH 40
+#define TabTabBarH 49
+#define TabEventScale 1.5
+
+#define iPhone4  ([[UIScreen mainScreen] bounds].size.height <= 568)
+#define iPhone5  ([[UIScreen mainScreen] bounds].size.height == 568)
+
+
+//带有RGBA的颜色设置
+#define COLOR(R, G, B, A) [UIColor colorWithRed:R/255.0 green:G/255.0 blue:B/255.0 alpha:A]
+
+// 获取RGB颜色
+#define RGBA(r,g,b,a) [UIColor colorWithRed:r/255.0f green:g/255.0f blue:b/255.0f alpha:a]
+#define RGB(r,g,b) RGBA(r,g,b,1.0f)
+#define HexRGB(rgbValue) [UIColor colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 green:((float)((rgbValue & 0xFF00) >> 8))/255.0 blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]
+#define HexRGBAlpha(rgbValue,a) [UIColor colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 green:((float)((rgbValue & 0xFF00) >> 8))/255.0 blue:((float)(rgbValue & 0xFF))/255.0 alpha:(a)]
+
+#define fontHightColor HexRGB(0x919191) //字体深色
+#define fontNomalColor HexRGB(0xbbbbbb) //字体浅色
+#define fontBlackColor HexRGB(0x404040) //字体黑
+
+#define COLOR_BACKGROUND [UIColor whiteColor]
+
+#define COLOR_TABLE_HEADER [UIColor whiteColor]
+
+//设置字体大小
+#define FONT(s) [UIFont systemFontOfSize:s]
+
+#define TABLE_PAGE_SIZE 10
+
+// 按钮统一设置
+#define BTN_NORMAL_COLOR            @"#8e8e93"  // 按钮默认的背景色
+#define BTN_SELECTED_COLOR          @"#ba2221"  // 按钮选中的背景色
+#define BTN_TITLE_FONT   18
+#define LOGIN_SUCCESS @"LOGIN_SUCCESS"          // 登录成功
+#define DropOutApp @"dropOutApp"                // 退出登录
+
+#define NO_CONNECT_NET @"连接到服务器失败"
+#define REMOVE_TABBAR_SUBVIEWS @"REMOVE_TABBAR_SUBVIEWS"
+#define RSA_ERROR @"RSA_ERROR_NOTIFICATION"
+#define LOSE_EFFICACY_COOKIE @"LOSE_EFFICACY_COOKIE"
+#define LOG_OUT @"LOG_OUT"
+#define HAND_PWD_STATE @"HAND_PWD_STATE"
+
+#define iphone5x_4_0 ([UIScreen mainScreen].bounds.size.height == 568.0f)
+
+#define isNull(x)             (!x || [x isKindOfClass:[NSNull class]])
+#define isEmptyString(x)      (isNull(x) || [x isEqual:@""] || [x isEqual:@"(null)"] || [x isEqual:@"<null>"])
+
+#define FormatStr(str)   [NSString stringWithFormat:@"%@",str]
+
+#define WeakSelf __weak typeof(self) weakSelf = self;
+
+#define ScreenHeight [UIScreen mainScreen].bounds.size.height
+#define ScreenWidth [UIScreen mainScreen].bounds.size.width
+
+#define Font_Large_Title iPhone4?[UIFont systemFontOfSize:18.0f]:[UIFont systemFontOfSize:20.0f]
+#define Font_Large_Text iPhone4?[UIFont systemFontOfSize:16.0f]:[UIFont systemFontOfSize:18.0f]
+#define Font_Medium_Title iPhone4?[UIFont systemFontOfSize:14.0f]:[UIFont systemFontOfSize:16.0f]
+#define Font_Medium_Text iPhone4?[UIFont systemFontOfSize:12.0f]:[UIFont systemFontOfSize:14.0f]
+#define Font_Small_Title iPhone4?[UIFont systemFontOfSize:10.0f]:[UIFont systemFontOfSize:12.0f]
+#define Font_Small_Text iPhone4?[UIFont systemFontOfSize:8.0f]:[UIFont systemFontOfSize:10.0f]
+
+#define UpdatePackageData @"UpdatePackageData"
+#define UpdateInstrumentData @"UpdateInstrumentData"
+#define LoginSuccessReloadData @"LoginSuccessReloadData"
+
+
+///------------
+/// AppDelegate
+///------------
+
+#define SharedAppDelegate ([UIApplication sharedApplication].delegate)
+
+#endif /* PrefixHeader_pch */

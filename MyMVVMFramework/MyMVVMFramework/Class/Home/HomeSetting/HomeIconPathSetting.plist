@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>userManagement</key>
+	<string>gz_icon_sh_zzjg</string>
+	<key>deptManagement</key>
+	<string>gz_icon_oa_cgx</string>
+	<key>chatRecord</key>
+	<string>gz_icon_crm_kh</string>
+	<key>authorityManage</key>
+	<string>gz_icon_crm_qx</string>
+	<key>appsManagement</key>
+	<string>gz_icon_oa_tj</string>
+	<key>dataColumnManage</key>
+	<string>gz_icon_oa_zntj</string>
+	<key>roleManage</key>
+	<string>gz_icon_sh_jxkp</string>
+	<key>optionManage</key>
+	<string>gz_icon_crm_yysq</string>
+</dict>
+</plist>

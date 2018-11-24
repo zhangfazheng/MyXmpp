@@ -1,0 +1,91 @@
+PODS:
+  - AFNetworking (3.1.0):
+    - AFNetworking/NSURLSession (= 3.1.0)
+    - AFNetworking/Reachability (= 3.1.0)
+    - AFNetworking/Security (= 3.1.0)
+    - AFNetworking/Serialization (= 3.1.0)
+    - AFNetworking/UIKit (= 3.1.0)
+  - AFNetworking/NSURLSession (3.1.0):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (3.1.0)
+  - AFNetworking/Security (3.1.0)
+  - AFNetworking/Serialization (3.1.0)
+  - AFNetworking/UIKit (3.1.0):
+    - AFNetworking/NSURLSession
+  - ChameleonFramework (2.1.0):
+    - ChameleonFramework/Default (= 2.1.0)
+  - ChameleonFramework/Default (2.1.0)
+  - CocoaAsyncSocket (7.6.1)
+  - CocoaLumberjack (3.3.0):
+    - CocoaLumberjack/Default (= 3.3.0)
+    - CocoaLumberjack/Extensions (= 3.3.0)
+  - CocoaLumberjack/Default (3.3.0)
+  - CocoaLumberjack/Extensions (3.3.0):
+    - CocoaLumberjack/Default
+  - FMDB (2.7.2):
+    - FMDB/standard (= 2.7.2)
+  - FMDB/standard (2.7.2)
+  - IQKeyboardManager (4.0.11)
+  - JDStatusBarNotification (1.5.5)
+  - KissXML (5.2.0)
+  - Masonry (1.0.2)
+  - MBProgressHUD (1.0.0)
+  - MJRefresh (3.1.12)
+  - ReactiveObjC (3.0.0)
+  - RealReachability (1.1.9):
+    - RealReachability/Connection (= 1.1.9)
+    - RealReachability/Ping (= 1.1.9)
+  - RealReachability/Connection (1.1.9)
+  - RealReachability/Ping (1.1.9)
+  - SDWebImage (4.1.0):
+    - SDWebImage/Core (= 4.1.0)
+  - SDWebImage/Core (4.1.0)
+  - WebViewJavascriptBridge (6.0.2)
+  - XMPPFramework (3.7.0):
+    - CocoaAsyncSocket (~> 7.6.0)
+    - CocoaLumberjack
+    - KissXML (~> 5.2.0)
+  - YYKit (1.0.9):
+    - YYKit/no-arc (= 1.0.9)
+  - YYKit/no-arc (1.0.9)
+
+DEPENDENCIES:
+  - AFNetworking
+  - ChameleonFramework
+  - FMDB
+  - IQKeyboardManager
+  - JDStatusBarNotification
+  - Masonry
+  - MBProgressHUD
+  - MJRefresh
+  - ReactiveObjC
+  - RealReachability
+  - SDWebImage
+  - WebViewJavascriptBridge
+  - XMPPFramework
+  - YYKit
+
+SPEC CHECKSUMS:
+  AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
+  ChameleonFramework: d21a3cc247abfe5e37609a283a8238b03575cf64
+  CocoaAsyncSocket: 7eadd3f59e1a6c84e2aefc93e9ff7b55156fe174
+  CocoaLumberjack: 3c8c74683302f9012bb168e1c4b7ae3c0b558431
+  FMDB: 6198a90e7b6900cfc046e6bc0ef6ebb7be9236aa
+  IQKeyboardManager: 83eae5318483a34eb2069ef413d195b97605232e
+  JDStatusBarNotification: 2b4f29bd68a60d7aa2f190b5265f1ce59c18aaf8
+  KissXML: 1c1eeeb6b94e4522cd2f2373e5d0d03c9227738f
+  Masonry: 7c429b56da9d4ee0bbb3ed77a5ea710d6a5df39e
+  MBProgressHUD: 4890f671c94e8a0f3cf959aa731e9de2f036d71a
+  MJRefresh: b96cdb21c4aa75a7b07654311ab2f315c497e806
+  ReactiveObjC: ce79989e8684b9086b5f8d0c74bc7b81a8729c9e
+  RealReachability: a8c483900986a0f3305733961effbfbb00637a02
+  SDWebImage: 0e435c14e402a6730315a0fb79f95e68654d55a4
+  WebViewJavascriptBridge: 791ee0e26d1bf15efe5fb7fb9666a71a19b89d77
+  XMPPFramework: 6f99ad1afcdb0cdbec7192a8e4c542c3fc3de6f8
+  YYKit: 7cda43304a8dc3696c449041e2cb3107b4e236e7
+
+PODFILE CHECKSUM: 71e35e7639af2295b034e32366ad1f1d82892a0b
+
+COCOAPODS: 1.1.1

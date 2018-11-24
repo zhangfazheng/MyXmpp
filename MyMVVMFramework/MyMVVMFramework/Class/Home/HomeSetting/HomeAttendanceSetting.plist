@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>toolName</key>
+		<string>考勤打卡</string>
+		<key>icon</key>
+		<string>gz_icon_oa_kqdk</string>
+	</dict>
+	<dict>
+		<key>toolName</key>
+		<string>请假</string>
+		<key>icon</key>
+		<string>gz_icon_crm_qj</string>
+	</dict>
+	<dict>
+		<key>toolName</key>
+		<string>外出</string>
+		<key>icon</key>
+		<string>gz_icon_crm_wc</string>
+	</dict>
+	<dict>
+		<key>toolName</key>
+		<string>出差</string>
+		<key>icon</key>
+		<string>gz_icon_crm_cc</string>
+	</dict>
+	<dict>
+		<key>toolName</key>
+		<string>加班</string>
+		<key>icon</key>
+		<string>gz_icon_crm_jb</string>
+	</dict>
+</array>
+</plist>

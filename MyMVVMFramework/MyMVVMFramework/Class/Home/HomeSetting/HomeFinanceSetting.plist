@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>toolName</key>
+		<string>报销</string>
+		<key>icon</key>
+		<string>gz_icon_oa_bx</string>
+	</dict>
+	<dict>
+		<key>toolName</key>
+		<string>备用金申请</string>
+		<key>icon</key>
+		<string>gz_icon_crm_byjsq</string>
+	</dict>
+	<dict>
+		<key>toolName</key>
+		<string>工资条</string>
+		<key>icon</key>
+		<string>gz_icon_cw_gzt</string>
+	</dict>
+</array>
+</plist>
